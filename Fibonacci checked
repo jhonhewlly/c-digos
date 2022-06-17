@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main() {
+    int fibonacci=0,fibonaccj=1,aux,numero,f=0;
+    printf("Insira um número inteiro positivo:\n");
+    scanf("%d",&numero);
+    while(fibonacci<=numero){
+        if(fibonacci==numero) f=1;
+        aux=fibonaccj;
+        fibonaccj=fibonacci+fibonaccj;
+        fibonacci=aux;
+    }
+    if(f) printf("O número %d pertence a sequência de Fibonacci!\n",numero);
+    else printf("O número %d não pertece a sequência de Fibonacci!\n",numero);
+    return 0;
+}
