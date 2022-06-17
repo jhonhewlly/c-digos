@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+int main() {
+    char string[100],aux;
+    int t;
+    printf("insira uma palavra:\n");
+    gets(string);
+    t=strlen(string);
+    for(int i=0; i < floor(t/2);i++){
+        aux=string[i];
+        string[i]=string[t-i-1];
+        string[t-i-1]=aux;
+    }
+    printf("A palavra invertida é:\n%s\n",string);
+    return 0;
+}
