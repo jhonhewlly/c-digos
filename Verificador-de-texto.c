@@ -1,3 +1,4 @@
+
 // Online C compiler to run C program online
 #include <stdio.h>
 #include <string.h>
@@ -8,11 +9,12 @@ int main() {
     printf("Insira um texto:\n");
     gets(string);
     for(int i=0; i <= strlen(string);i++){
-       if(string[i]==" ") {
+       if(string[i]==' ') {
            palavra++;
            printf("bingo!\n");
        }
     }
+    palavra++;
     printf("%d palavras!\n",palavra);
     return 0;
 }
