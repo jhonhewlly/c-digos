@@ -3,10 +3,12 @@
 #include <string.h>
 int main() {
     char string[200];
+    int Letra=0,palavra=0,frase=0;
     
     printf("Insira um texto:\n");
     gets(string);
-    printf("O texto inserido foi:\n%s\n",string);
-    printf("O tamanho do texto é:\n%d\n",strlen(string));
+    for(int i=0; i <= strlen(string);i++){
+        
+    }
     return 0;
 }
