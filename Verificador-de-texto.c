@@ -12,7 +12,6 @@ int main() {
        else if(string[i]=='.'||string[i]==',') frase++;
        else Letra++;
            
-       printf("%c\n",string[i]);
     }
     palavra++;
     Letra--;
