@@ -12,10 +12,13 @@ void leg(char *texto, int *vet){
 int main() {
     char string[200];
     int vetor[]={0,0,0};
+    float indice,l,s;
     printf("Insira um texto:\n");
     gets(string);
     
     leg(string,vetor);
-    
+    l= (float) vetor[0]/(float) vetor[1];
+    s= (float) vetor[2]/(float) vetor[1];
+   
     return 0;
 }
