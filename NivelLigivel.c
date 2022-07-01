@@ -19,6 +19,8 @@ int main() {
     leg(string,vetor);
     l= (float) vetor[0]/(float) vetor[1];
     s= (float) vetor[2]/(float) vetor[1];
-   
+
+    indice=5.88*l-29.6*s-15.8;
+    printf("%.2f .. %.2f .. %.2f",l,s,indice);
     return 0;
 }
