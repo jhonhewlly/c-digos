@@ -7,7 +7,9 @@ printf("%d\n",vet[2]);
 int main() {
     char string[200];
     int vetor[]={0,0,0};
-    // Write C code here
+    printf("Insira um texto:\n");
+    gets(string);
+    
     leg(string,vetor);
     
     return 0;
