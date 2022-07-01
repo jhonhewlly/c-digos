@@ -1,6 +1,7 @@
 // Online C compiler to run C program online
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 void leg(char *texto, int *vet){
  for(int i=0; texto[i]!= '\0';i++){
      if (texto[i]==' ') vet[1]++;
@@ -21,6 +22,6 @@ int main() {
     s= (float) vetor[2]/(float) vetor[1];
 
     indice=5.88*l-29.6*s-15.8;
-    printf("%.2f .. %.2f .. %.2f",l,s,indice);
+    printf("%.2f .. %.2f .. %.2f",l,s,ceil(indice));
     return 0;
 }
