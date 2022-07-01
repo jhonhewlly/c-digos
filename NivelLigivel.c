@@ -2,7 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 void leg(char *texto, int *vet){
-printf("%d\n",vet[2]);
+ for(int i=0; texto[i]!= '\0';i++){
+     if (texto[i]==' ') vet[1]++;
+     else if(texto[i]=='.'||texto[i]==',') vet[2]++;
+     else vet[0]++;
+ }
+ vet[0]--;
+ vet[1]++;
 }
 int main() {
     char string[200];
