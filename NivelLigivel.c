@@ -7,7 +7,6 @@ void leg(char *texto, int *vet){
      else if(texto[i]=='.'||texto[i]==',') vet[2]++;
      else vet[0]++;
  }
- vet[0]--;
  vet[1]++;
 }
 int main() {
