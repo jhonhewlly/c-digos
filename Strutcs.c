@@ -14,7 +14,12 @@ typedef struct{
 } ;
 struct pessoa cadastro(){
     struct pessoa x;
-    printf("helo");
+    printf("Ensira o nome:\n");
+    scanf("%s",x.nome);
+    printf("Ensira a Idade:\n");
+    scanf("%d",&x.idade);
+    printf("Ensira a altura:\n");
+    scanf("%.2f",&x.altura);
     return x;
 }
 int main() {
