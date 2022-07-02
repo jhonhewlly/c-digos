@@ -12,10 +12,15 @@ typedef struct{
     float altura;
     endereco local;
 } ;
-
+struct pessoa cadastro(){
+    struct pessoa x;
+    printf("helo");
+    return x;
+}
 int main() {
    struct pessoa r;
-    strcpy(r.nome,"augusto");
+    strcpy(r.nome,"Augusto");
+    cadastro();
     // Write C code here
     printf("%s",r.nome);
     
